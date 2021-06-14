@@ -3,32 +3,61 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://example.com/about/</loc>
+    <loc>https://jackie116.github.io/2021/05/20210601/</loc>
+    <lastmod>2021-05-31T23:45:41+08:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://jackie116.github.io/posts/</loc>
+    <lastmod>2021-05-31T23:45:41+08:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://jackie116.github.io/</loc>
+    <lastmod>2021-05-31T23:45:41+08:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://jackie116.github.io/about/</loc>
     <lastmod>2021-05-31T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://example.com/categories/</loc>
+    <loc>https://jackie116.github.io/2021/05/20210530/</loc>
+    <lastmod>2021-05-29T18:37:28+08:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://example.com/series/</loc>
+    <loc>https://jackie116.github.io/2021/05/my-first-post/</loc>
+    <lastmod>2021-05-27T11:41:00+08:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://example.com/tags/</loc>
+    <loc>https://jackie116.github.io/categories/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://example.com/</loc>
+    <loc>https://jackie116.github.io/series/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://jackie116.github.io/tags/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
