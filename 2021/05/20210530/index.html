@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>
+        Hugo筆記2-資料夾結構 - 個人程式筆記
+      </title>
+        <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="Cache-Control" content="no-transform" />
+    <meta http-equiv="Cache-Control" content="no-siteapp" />
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no,email=no,adress=no">
+    
+    <meta name="theme-color" content="#000000" />
+    
+    <meta http-equiv="window-target" content="_top" />
+    
+    
+    <meta name="description" content="上篇Hugo筆記1-介紹和安裝，介紹完基本的安裝和機制，今天來講Hugo的資料夾結構。 回想一下我們建立網站資料夾的指令： hugo new site quickstart 我們創建名為" />
+    <meta name="generator" content="Hugo 0.83.1 with theme pure" />
+    <title>Hugo筆記2-資料夾結構 - 個人程式筆記</title>
+    
+    
+    <link rel="stylesheet" href="https://example.com/css/style.min.084a5eb24fb0cf9d5aade7246f19ba0c820cf904996a28ffe88039427693ac68.css">
+    
+    <link rel="stylesheet" href="https://cdn.staticfile.org/highlight.js/9.15.10/styles/github.min.css" async>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.4.2/tocbot.css" async>
+    <meta property="og:title" content="Hugo筆記2-資料夾結構" />
+<meta property="og:description" content="上篇Hugo筆記1-介紹和安裝，介紹完基本的安裝和機制，今天來講Hugo的資料夾結構。 回想一下我們建立網站資料夾的指令： hugo new site quickstart 我們創建名為" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://example.com/2021/05/20210530/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2021-05-29T18:37:28&#43;08:00" />
+<meta property="article:modified_time" content="2021-05-29T18:37:28&#43;08:00" />
+
+<meta itemprop="name" content="Hugo筆記2-資料夾結構">
+<meta itemprop="description" content="上篇Hugo筆記1-介紹和安裝，介紹完基本的安裝和機制，今天來講Hugo的資料夾結構。 回想一下我們建立網站資料夾的指令： hugo new site quickstart 我們創建名為"><meta itemprop="datePublished" content="2021-05-29T18:37:28&#43;08:00" />
+<meta itemprop="dateModified" content="2021-05-29T18:37:28&#43;08:00" />
+<meta itemprop="wordCount" content="767">
+<meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Hugo筆記2-資料夾結構"/>
+<meta name="twitter:description" content="上篇Hugo筆記1-介紹和安裝，介紹完基本的安裝和機制，今天來講Hugo的資料夾結構。 回想一下我們建立網站資料夾的指令： hugo new site quickstart 我們創建名為"/>
+
+    <!--[if lte IE 9]>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
+      <![endif]-->
+
+    <!--[if lt IE 9]>
+        <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+      <![endif]-->
+  </head>
+
+  
+  
+
+  <body class="main-center theme-black" itemscope itemtype="http://schema.org/WebPage"><header class="header" itemscope itemtype="http://schema.org/WPHeader">
+    <div class="slimContent">
+      <div class="navbar-header">
+        <div class="profile-block text-center">
+          <a id="avatar" href="https://github.com/jackie116" target="_blank">
+            <img class="img-circle img-rotate" src="https://example.com/avatar.png" width="200" height="200">
+          </a>
+          <h2 id="name" class="hidden-xs hidden-sm">Jackie Huang</h2>
+          <h3 id="title" class="hidden-xs hidden-sm hidden-md">Software Engineer</h3>
+          <small id="location" class="text-muted hidden-xs hidden-sm"><i class="icon icon-map-marker"></i>Taipei, Taiwan</small>
+        </div><div class="search" id="search-form-wrap">
+    <form class="search-form sidebar-form">
+        <div class="input-group">
+            <input type="text" class="search-form-input form-control" placeholder="Search" />
+            <span class="input-group-btn">
+                <button type="submit" class="search-form-submit btn btn-flat" onclick="return false;"><i
+                        class="icon icon-search"></i></button>
+            </span>
+        </div>
+        <div class="ins-search">
+            <div class="ins-search-mask"></div>
+            <div class="ins-search-container">
+                <div class="ins-input-wrapper">
+                    <input type="text" class="ins-search-input" placeholder="Type something..."
+                        x-webkit-speech />
+                    <button type="button" class="close ins-close ins-selectable" data-dismiss="modal"
+                        aria-label="Close"><span aria-hidden="true">×</span></button>
+                </div>
+                <div class="ins-section-wrapper">
+                    <div class="ins-section-container"></div>
+                </div>
+            </div>
+        </div>
+    </form>
+</div>
+        <button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target="#main-navbar" aria-controls="main-navbar" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+      </div>
+      <nav id="main-navbar" class="collapse navbar-collapse" itemscope itemtype="http://schema.org/SiteNavigationElement" role="navigation">
+        <ul class="nav navbar-nav main-nav">
+            <li class="menu-item menu-item-home">
+                <a href="/">
+                    <i class="icon icon-home-fill"></i>
+                  <span class="menu-title">Home</span>
+                </a>
+            </li>
+            <li class="menu-item menu-item-archives">
+                <a href="/posts/">
+                    <i class="icon icon-archives-fill"></i>
+                  <span class="menu-title">Archives</span>
+                </a>
+            </li>
+            <li class="menu-item menu-item-categories">
+                <a href="/categories/">
+                    <i class="icon icon-folder"></i>
+                  <span class="menu-title">Categories</span>
+                </a>
+            </li>
+            <li class="menu-item menu-item-tags">
+                <a href="/tags/">
+                    <i class="icon icon-tags"></i>
+                  <span class="menu-title">Tags</span>
+                </a>
+            </li>
+            <li class="menu-item menu-item-about">
+                <a href="/about/">
+                    <i class="icon icon-cup-fill"></i>
+                  <span class="menu-title">About</span>
+                </a>
+            </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+<aside class="sidebar" itemscope itemtype="http://schema.org/WPSideBar">
+  <div class="slimContent">
+    
+      <div class="widget">
+    <h3 class="widget-title">Board</h3>
+    <div class="widget-body">
+        <div id="board">
+            <div class="content"><p>enjoy~</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+      <div class="widget">
+    <h3 class="widget-title"> Categories</h3>
+    <div class="widget-body">
+        <ul class="category-list">
+        </ul>
+    </div>
+</div>
+      
+<div class="widget">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget-body">
+        <ul class="recent-post-list list-unstyled no-thumbnail">
+            <li>
+                <div class="item-inner">
+                    <p class="item-title">
+                        <a href="https://example.com/2021/05/20210601/" class="title">Hugo筆記3-設定</a>
+                    </p>
+                    <p class="item-date">
+                        <time datetime="2021-05-31 23:45:41 &#43;0800 CST" itemprop="datePublished">2021-05-31</time>
+                    </p>
+                </div>
+            </li>
+            <li>
+                <div class="item-inner">
+                    <p class="item-title">
+                        <a href="https://example.com/2021/05/20210530/" class="title">Hugo筆記2-資料夾結構</a>
+                    </p>
+                    <p class="item-date">
+                        <time datetime="2021-05-29 18:37:28 &#43;0800 CST" itemprop="datePublished">2021-05-29</time>
+                    </p>
+                </div>
+            </li>
+            <li>
+                <div class="item-inner">
+                    <p class="item-title">
+                        <a href="https://example.com/2021/05/my-first-post/" class="title">Hugo筆記1-介紹和安裝</a>
+                    </p>
+                    <p class="item-date">
+                        <time datetime="2021-05-27 11:41:00 &#43;0800 CST" itemprop="datePublished">2021-05-27</time>
+                    </p>
+                </div>
+            </li>
+        </ul>
+    </div>
+</div>
+  </div>
+</aside>
+
+    
+    
+<aside class="sidebar sidebar-toc collapse" id="collapseToc" itemscope itemtype="http://schema.org/WPSideBar">
+  <div class="slimContent">
+    <h4 class="toc-title">Catalogue</h4>
+    <nav id="toc" class="js-toc toc">
+
+    </nav>
+  </div>
+</aside>
+<main class="main" role="main"><div class="content">
+  <article id="-" class="article article-type-" itemscope
+    itemtype="http://schema.org/BlogPosting">
+    
+    <div class="article-header">
+      <h1 itemprop="name">
+  <a
+    class="article-title"
+    href="/2021/05/20210530/"
+    >Hugo筆記2-資料夾結構</a
+  >
+</h1>
+
+      <div class="article-meta">
+        
+<span class="article-date">
+  <i class="icon icon-calendar-check"></i>&nbsp;
+<a href="https://example.com/2021/05/20210530/" class="article-date">
+  <time datetime="2021-05-29 18:37:28 &#43;0800 CST" itemprop="datePublished">2021-05-29</time>
+</a>
+</span>
+
+
+		<span class="post-wordcount hidden-xs" itemprop="wordCount">Word Count: 767 words</span>
+		<span class="post-readcount hidden-xs" itemprop="timeRequired">Read Time: 2 minutes </span>
+      </div>
+    </div>
+    <div class="article-entry marked-body js-toc-content" itemprop="articleBody">
+      <p>上篇<a href="./my-first-post.md">Hugo筆記1-介紹和安裝</a>，介紹完基本的安裝和機制，今天來講Hugo的資料夾結構。
+回想一下我們建立網站資料夾的指令：</p>
+<pre><code>hugo new site quickstart
+</code></pre>
+<p>我們創建名為quickstart的網站資料夾，hugo同時也在資料夾內幫忙建立好以下結構：</p>
+<pre><code>.
++-- archetypes  
++-- config.toml  
++-- content
++-- data
++-- layouts
++-- static
++-- themes
+</code></pre>
+<ul>
+<li>
+<p>archetypes<br>
+放文章模板的資料夾，預設會有<code>title</code>、<code>date</code>、<code>draft: true</code>屬性，<br>
+可以事先設定好模板屬性，避免每次<code>hugo new</code>新文章都要設定。</p>
+</li>
+<li>
+<p>config.toml<br>
+Hugo設定檔，預設.toml，也支援.json、.yaml、.yml。<br>
+<a href="https://themes.gohugo.io">Hugo Themes</a>下載的主題大部分都有預設的config，可以直接替換使用。</p>
+</li>
+<li>
+<p>content<br>
+所有的內容(頁面)都存放在這個資料夾，資料夾內每個top-level資料夾都視為一個content section。<br>
+Hugo預設指派content section 為content type。<br>
+這部分看官方原文比較好理解：</p>
+</li>
+</ul>
+<blockquote>
+<p><strong>Content section</strong> : A Section is a collection of pages that gets defined based on the organization structure under the content/ directory.**</p>
+</blockquote>
+<blockquote>
+<p><strong>Content type</strong> : A content type is a way to organize your content. Hugo resolves the content type from either the type in front matter or, if not set, the first directory in the file path. E.g. content/blog/my-first-event.md will be of type blog if no type set.</p>
+</blockquote>
+<ul>
+<li>
+<p>data<br>
+用來存放生成網站的設定文件，或是自定義 <a href="https://gohugo.io/templates/data-templates/">data templates</a> 使Hugo能動態抓取資料。</p>
+</li>
+<li>
+<p>layouts<br>
+存放用於生成靜態網站的<code>.html</code>模板。<br>
+下載的theme都有各自的layouts，自行設計才會用到。</p>
+</li>
+<li>
+<p>static<br>
+存放靜態資源檔案，圖片、css、javascript</p>
+</li>
+<li>
+<p>themes<br>
+存放下載的主題。<br>
+有多個主題時，網站生成時能用 <code>-t</code>參數指定。</p>
+</li>
+</ul>
+<h4 id="其他資料夾">其他資料夾</h4>
+<p>以上結構是網站生成時預設的資料夾，這邊再講兩個進階使用時需手動建立的資料夾：</p>
+<ul>
+<li>
+<p>assets<br>
+存放所有需要<a href="https://gohugo.io/hugo-pipes/">Hugo Pipes</a>處理的文件，只有使用了<code>.Permalink</code>、<code>.RelPermalink</code>的文件會被放到<code>public</code>資料夾。</p>
+</li>
+<li>
+<p>resources<br>
+緩存部分文件以加速網站生成，模板作者也可用來分發SASS文件，因此你不用裝預處理器。</p>
+</li>
+</ul>
+<h2 id="小結">小結</h2>
+<p>這篇介紹Hugo的資料夾結構，下篇再介紹Hugo的設定</p>
+<h2 id="reference">Reference</h2>
+<p><a href="https://gohugo.io/getting-started/directory-structure/">Directory Structure | Hugo</a></p>
+
+    </div>
+    <div class="article-footer">
+<blockquote class="mt-2x">
+  <ul class="post-copyright list-unstyled">
+    <li class="post-copyright-link hidden-xs">
+      <strong>Permalink: </strong>
+      <a href="https://example.com/2021/05/20210530/" title="Hugo筆記2-資料夾結構" target="_blank" rel="external">https://example.com/2021/05/20210530/</a>
+    </li>
+    <li class="post-copyright-license">
+      <strong>License: </strong>
+        <a href="http://creativecommons.org/licenses/by/4.0/deed.zh" target="_blank" rel="external">CC BY 4.0 CN</a>
+    </li>
+  </ul>
+</blockquote>
+
+<div class="panel panel-default panel-badger">
+  <div class="panel-body">
+    <figure class="media">
+      <div class="media-left">
+        <a href="https://github.com/jackie116" target="_blank" class="img-burn thumb-sm visible-lg">
+          <img src="https://example.com/avatar.png" class="img-rounded w-full" alt="">
+        </a>
+      </div>
+      <div class="media-body">
+        <h3 class="media-heading"><a href="https://github.com/jackie116" target="_blank"><span class="text-dark">Jackie Huang</span><small class="ml-1x">Software Engineer</small></a></h3>
+        <div></div>
+      </div>
+    </figure>
+  </div>
+</div>
+
+    </div>
+  </article>
+</div><nav class="bar bar-footer clearfix" data-stick-bottom>
+    <div class="bar-inner">
+        <ul class="pager pull-left">
+            <li class="prev">
+                <a href="https://example.com/2021/05/my-first-post/" title="Hugo筆記1-介紹和安裝"><i
+                        class="icon icon-angle-left"
+                        aria-hidden="true"></i><span>&nbsp;&nbsp;Older</span></a>
+            </li>
+            <li class="next">
+                <a href="https://example.com/about/"
+                    title="About"><span>Newer&nbsp;&nbsp;</span><i
+                        class="icon icon-angle-right" aria-hidden="true"></i></a>
+            </li>
+            
+            <li class="toggle-toc">
+                <a class="toggle-btn collapsed" data-toggle="collapse" href="#collapseToc" aria-expanded="false"
+                    title="Catalogue" role="button">
+                    <span>[&nbsp;</span><span>Catalogue</span>
+                    <i class="text-collapsed icon icon-anchor"></i>
+                    <i class="text-in icon icon-close"></i>
+                    <span>]</span>
+                </a>
+            </li>
+        </ul>
+        <div class="bar-right">
+            <div class="share-component" data-sites="weibo,qq,wechat,facebook,twitter"
+                data-mobile-sites="weibo,qq,qzone"></div>
+        </div>
+    </div>
+</nav>
+
+
+</main><footer class="footer" itemscope itemtype="http://schema.org/WPFooter">
+<ul class="social-links">
+    <li><a href="https://example.com/" target="_blank" title="email" data-toggle=tooltip data-placement=top >
+            <i class="icon icon-email"></i></a></li>
+    <li><a href="https://github.com/jackie116" target="_blank" title="github" data-toggle=tooltip data-placement=top >
+            <i class="icon icon-github"></i></a></li>
+    <li><a href="https://example.com/" target="_blank" title="linkin" data-toggle=tooltip data-placement=top >
+            <i class="icon icon-linkin"></i></a></li>
+</ul>
+  <div class="copyright">
+    &copy;2017  -
+    2021
+    <div class="publishby">
+        Theme by <a href="https://github.com/xiaoheiAh" target="_blank"> xiaoheiAh </a>base on<a href="https://github.com/xiaoheiAh/hugo-theme-pure" target="_blank"> pure</a>.
+    </div>
+  </div>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-MML-AM_SVG"></script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+            showMathMenu: false, //disables context menu
+            tex2jax: {
+            inlineMath: [ ['$','$'], ['\\(','\\)'] ]
+           }
+    });
+</script>
+
+
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
+<script>
+    window.jQuery || document.write('<script src="js/jquery.min.js"><\/script>')
+</script>
+<script type="text/javascript" src="https://cdn.staticfile.org/highlight.js/9.15.10/highlight.min.js"></script>
+<script type="text/javascript" src="https://cdn.staticfile.org/highlight.js/9.15.10/languages/python.min.js" defer></script>
+<script type="text/javascript" src="https://cdn.staticfile.org/highlight.js/9.15.10/languages/javascript.min.js" defer></script><script>
+    hljs.configure({
+        tabReplace: '    ', 
+        classPrefix: ''     
+        
+    })
+    hljs.initHighlightingOnLoad();
+</script>
+<script src="https://example.com/js/application.min.a94ab19cb63a95c8d7fbd7b85cab3ddeea8c369bdf75b9cab6708787ead123af.js"></script>
+<script src="https://example.com/js/plugin.min.19c5bcb2fb0789ab4f2b7834e5ceb5e92635645605bab902c1024b25f1502364.js"></script>
+
+<script>
+    (function (window) {
+        var INSIGHT_CONFIG = {
+            TRANSLATION: {
+                POSTS: 'Posts',
+                PAGES: 'Pages',
+                CATEGORIES: 'Categories',
+                TAGS: 'Tags',
+                UNTITLED: '(Untitled)',
+            },
+            ROOT_URL: 'https:\/\/example.com\/',
+            CONTENT_URL: 'https:\/\/example.com\/\/searchindex.json ',
+        };
+        window.INSIGHT_CONFIG = INSIGHT_CONFIG;
+    })(window);
+</script>
+<script type="text/javascript" src="https://example.com/js/insight.min.4a2d52de4bfff73e0c688404fe3d17c9a3ae12d9888e1e1ac9c690e4890de2ded50fe55f2b819c2ba55435a76f396f3ea6805765f0b0af5635cdf74ea459eab0.js" defer></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.4.2/tocbot.min.js"></script>
+<script>
+    tocbot.init({
+        
+        tocSelector: '.js-toc',
+        
+        contentSelector: '.js-toc-content',
+        
+        headingSelector: 'h1, h2, h3',
+        
+        hasInnerContainers: true,
+    });
+</script>
+
+
+  </body>
+</html>
