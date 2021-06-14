@@ -11,15 +11,6 @@
     
     
     <item>
-      <title>Hugo筆記3-設定</title>
-      <link>https://example.com/2021/05/20210601/</link>
-      <pubDate>Mon, 31 May 2021 23:45:41 +0800</pubDate>
-      
-      <guid>https://example.com/2021/05/20210601/</guid>
-      <description>這篇介紹hugo的一些基礎設定，但設定部分，可能會因為使用者下載的主題，有不同需要設定的地方，這邊我們就介紹常用和我有用到的設定。 設定檔 設定</description>
-    </item>
-    
-    <item>
       <title>About</title>
       <link>https://example.com/about/</link>
       <pubDate>Mon, 31 May 2021 00:00:00 +0000</pubDate>
@@ -28,24 +19,6 @@
       <description>Written in Go, Hugo is an open source static site generator available under the Apache Licence 2.0. Hugo supports TOML, YAML and JSON data file types, Markdown and HTML content files and uses shortcodes to add rich content. Other notable features are taxonomies, multilingual mode, image processing, custom output formats, HTML/CSS/JS minification and support for Sass SCSS workflows.
 Hugo makes use of a variety of open source projects including:
  https://github.</description>
-    </item>
-    
-    <item>
-      <title>Hugo筆記2-資料夾結構</title>
-      <link>https://example.com/2021/05/20210530/</link>
-      <pubDate>Sat, 29 May 2021 18:37:28 +0800</pubDate>
-      
-      <guid>https://example.com/2021/05/20210530/</guid>
-      <description>上篇Hugo筆記1-介紹和安裝，介紹完基本的安裝和機制，今天來講Hugo的資料夾結構。 回想一下我們建立網站資料夾的指令： hugo new site quickstart 我們創建名為</description>
-    </item>
-    
-    <item>
-      <title>Hugo筆記1-介紹和安裝</title>
-      <link>https://example.com/2021/05/my-first-post/</link>
-      <pubDate>Thu, 27 May 2021 11:41:00 +0800</pubDate>
-      
-      <guid>https://example.com/2021/05/my-first-post/</guid>
-      <description>Blog的第一篇文章，就用來記錄一下這個Blog的建立方式，也給其他需要的人參考。 其實現在Blog有很多選擇，舉凡Medium、Blogge</description>
     </item>
     
   </channel>
