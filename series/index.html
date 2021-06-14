@@ -56,12 +56,12 @@
     <div class="slimContent">
       <div class="navbar-header">
         <div class="profile-block text-center">
-          <a id="avatar" href="https://github.com/xiaoheiAh" target="_blank">
+          <a id="avatar" href="https://github.com/jackie116" target="_blank">
             <img class="img-circle img-rotate" src="https://example.com/avatar.png" width="200" height="200">
           </a>
-          <h2 id="name" class="hidden-xs hidden-sm">xiaoheiAh</h2>
-          <h3 id="title" class="hidden-xs hidden-sm hidden-md">author title</h3>
-          <small id="location" class="text-muted hidden-xs hidden-sm"><i class="icon icon-map-marker"></i>Shanghai, China</small>
+          <h2 id="name" class="hidden-xs hidden-sm">Jackie Huang</h2>
+          <h3 id="title" class="hidden-xs hidden-sm hidden-md">Software Engineer</h3>
+          <small id="location" class="text-muted hidden-xs hidden-sm"><i class="icon icon-map-marker"></i>Taipei, Taiwan</small>
         </div><div class="search" id="search-form-wrap">
     <form class="search-form sidebar-form">
         <div class="input-group">
@@ -145,48 +145,10 @@
 </div>
 
       <div class="widget">
-    <h3 class="widget-title"> Tags</h3>
-    <div id="tag-cloud-list" class="widget-body">
-            
-    </div>
-<script>
-document.onreadystatechange = () => {
-  if (document.readyState === 'complete') {
-    tagCloud('#tag-cloud-list a',  8 ,  20 );
-  }
-};
-
-function tagCloud(where, min, max) {
-  let iMax = 0;
-  let iMin = 0;
-  $(where).each(function() {
-    let weight = Number($(this).attr("rel"));
-    if(iMax < weight) iMax = weight;
-    if(iMin > weight || iMin == 0) iMin = weight;
-  });
-  let step = (max - min)/(iMax - iMin);
-  $(where).each(function() {
-    let weight = $(this).attr("rel") - iMin;
-    $(this).css({"font-size": min + (weight * step) + 'px'});
-  });
-};
-</script>
-</div>
-
-      <div class="widget">
     <h3 class="widget-title"> Categories</h3>
     <div class="widget-body">
         <ul class="category-list">
         </ul>
-    </div>
-</div>
-      <div class="widget">
-    <h3 class="widget-title"> Tags</h3>
-    <div class="widget-body">
-        <ul class="tag-list">
-            
-        </ul>
-
     </div>
 </div>
       
@@ -215,10 +177,12 @@ function tagCloud(where, min, max) {
     </article>
 </main><footer class="footer" itemscope itemtype="http://schema.org/WPFooter">
 <ul class="social-links">
-    <li><a href="https://github.com/xiaoheiAh" target="_blank" title="github" data-toggle=tooltip data-placement=top >
+    <li><a href="https://example.com/" target="_blank" title="email" data-toggle=tooltip data-placement=top >
+            <i class="icon icon-email"></i></a></li>
+    <li><a href="https://github.com/jackie116" target="_blank" title="github" data-toggle=tooltip data-placement=top >
             <i class="icon icon-github"></i></a></li>
-    <li><a href="https://example.com/index.xml" target="_blank" title="rss" data-toggle=tooltip data-placement=top >
-            <i class="icon icon-rss"></i></a></li>
+    <li><a href="https://example.com/" target="_blank" title="linkin" data-toggle=tooltip data-placement=top >
+            <i class="icon icon-linkin"></i></a></li>
 </ul>
   <div class="copyright">
     &copy;2017  -
